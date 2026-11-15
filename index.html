@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asthma Pathophysiology Explorer</title>
+  <style>
+    body { margin: 0; background: #f5f8fb; font-family: Arial, sans-serif; }
+    .stage-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 10px;
+      background: white;
+    }
+    .stage-nav button {
+      min-width: 100px;
+      min-height: 44px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    main { width: 100%; overflow-x: hidden; }
+    canvas { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.min.js"></script>
+  <script defer src="sketch.js"></script>
+</head>
+<body>
+  <nav class="stage-nav">
+    <button id="back-stage" type="button">← Back</button>
+    <button id="next-stage" type="button">Next →</button>
+  </nav>
+  <main id="sketch"></main>
+</body>
+</html>
